@@ -4,11 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicio HTML 1</title>
+    <title>Ejercicio FORMULARIO</title>
     <meta name="author" content="Lilen Campodonico" />
     <meta name="description" content="formularios" />
   </head>
-
   <body>
     <section>
       <form action="#" method="get">
@@ -16,13 +15,15 @@
           <legend>DATOS PERSONALES</legend>
 
           <label for="name">Nombre:</label>
-          <input id="name" name="name" type="text" autofocus />
+          <input id="name" name="name" type="text" autofocus required />
 
           <label for="correo">Correo ELectronico</label>
-          <input id="correo" name="email" type="email" />
+          <input id="correo" name="email" type="email" required />
 
           <label for="number">Telefono:</label>
-          <input id="number" name="phone" type="number" />
+          <input id="prefijo" name="phone" type="tel" readonly value="+34" />
+
+          <input id="number" name="phone" type="tel" />
 
           <label for="web">URL</label>
           <input
@@ -50,13 +51,13 @@
           <label for="semana">Semana:</label>
           <input id="semana" name="week" type="week" />
 
-          <label for="number">Numero:</label>
-          <input id="number" name="number" type="number" min="-10" max="10" />
+          <label for="maxmin">Numero:</label>
+          <input id="maxmin" name="number" type="number" min="-10" max="10" />
         </fieldset>
         <fieldset>
           <legend>OTROS DATOS</legend>
-          <label>Termino de Busqueda:</label>
-          <input type="search" />
+          <label for="busqueda">Termino de Busqueda:</label>
+          <input id="busqueda" name="busqueda" type="search" disabled />
 
           <label for="color">Color Favorito:</label>
           <input id="color" name="color" type="color" />
