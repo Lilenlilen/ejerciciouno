@@ -5,6 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <meta name="author" content="Lilen Campodonico" />
+    <meta name="description" content="ejercicio semana 1 completo" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Debrable</h1>
+      <nav>
+        <ul>
+          <li><a href="#peliculas">Mi TOP 10 peliculas</a></li>
+          <li><a href="#japon">Mi viaje a Japon</a></li>
+          <li><a href="#mensaje">Mándame un mensaje</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2 id="peliculas">MI TOP 10 PELICULAS</h2>
+        <ol>
+          <li>El padrino</li>
+          <li>La lista de Schindler</li>
+          <li>El padrino. Parte II</li>
+          <li>Cadena perpetua</li>
+          <li>Pulp Fiction</li>
+          <li>El Rey León</li>
+          <li>Forrest Gump</li>
+          <li>La vida es Bella</li>
+          <li>Gladiator</li>
+          <li>Coco</li>
+        </ol>
+      </section>
+      <section id="japon">
+        <h2>MI VIAJE A JAPÓN</h2>
+        <img
+          src="https://media.istockphoto.com/photos/pedestrians-crossing-the-street-at-shibuya-crossing-with-motion-blur-picture-id1134908837?s=612x612"
+          alt="paisaje tipico japones"
+        />
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error
+          inventore a accusantium ea, est aliquid quibusdam eligendi
+          exercitationem quas itaque. Necessitatibus aliquid ipsa corrupti eius
+          aspernatur sit eum earum mollitia.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
+          suscipit velit cum esse incidunt cumque optio quaerat fuga
+          perspiciatis delectus voluptatem similique temporibus eum, porro
+          possimus necessitatibus? Aliquam dolorem praesentium pariatur eos sunt
+          non! Obcaecati id, nihil amet porro expedita dolores in perspiciatis,
+          harum excepturi repellendus ipsam, eius quo laboriosam.
+        </p>
+      </section>
+
+      <aside>
+        <img
+          src="https://i.pinimg.com/736x/20/3e/ce/203ece9eb566b2aeb2cc90d2c398242b.jpg"
+          alt="foto de perfil"
+        />
+        <h2>Debra Smith</h2>
+        <p>Aqui escribo todo lo que se me ocurre</p>
+        <a href="mailto:debra.smith@example.com">debra.smith@example.com</a>
+      </aside>
+
+      <form id="mensaje">
+        <fieldset>
+          <legend>MANDAME UN MENSAJE</legend>
+
+          <label for="name">NOMBRE:</label>
+          <input id="name" name="name" type="text" autofocus required />
+
+          <label for="correo">Email:</label>
+          <input id="correo" name="email" type="email" required />
+
+          <label for="cumple">Fecha de Nacimiento:</label>
+          <input id="cumple" name="date" type="date" required />
+
+          <label for="coment">Comentarios:</label>
+          <input
+            id="coment"
+            name="comentarios"
+            type="text"
+            maxlength="150"
+            placeholder="Escribe aqui todo lo que quieras..."
+          />
+
+          <label for="check">Suscribirse a la Newsletter</label>
+          <input id="check" name="news" type="checkbox" />
+        </fieldset>
+        <button>Enviar</button>
+      </form>
+    </main>
+    <footer>Términos y Condiciones. Politica de privacidad.</footer>
+  </body>
 </html>
