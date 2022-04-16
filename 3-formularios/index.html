@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio HTML 1</title>
+    <meta name="author" content="Lilen Campodonico" />
+    <meta name="description" content="formularios" />
+  </head>
+
+  <body>
+    <section>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>DATOS PERSONALES</legend>
+
+          <label for="name">Nombre:</label>
+          <input id="name" name="name" type="text" autofocus />
+
+          <label for="correo">Correo ELectronico</label>
+          <input id="correo" name="email" type="email" />
+
+          <label for="number">Telefono:</label>
+          <input id="number" name="phone" type="number" />
+
+          <label for="web">URL</label>
+          <input
+            id="web"
+            name="web"
+            type="url"
+            placeholder="Escribe la URL de tu pagina web personal aqui..."
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>FECHAS POSIBLES</legend>
+          <label for="fecha">Fecha:</label>
+          <input id="fecha" name="fecha" type="date" />
+
+          <label for="hora">Tiempo:</label>
+          <input id="hora" name="time" type="time" />
+
+          <label for="fyh">Fecha y Hora:</label>
+          <input id="fyh" name="fecha" type="datetime-local" />
+
+          <label for="mes">Mes:</label>
+          <input id="mes" name="month" type="month" />
+
+          <label for="semana">Semana:</label>
+          <input id="semana" name="week" type="week" />
+
+          <label for="number">Numero:</label>
+          <input id="number" name="number" type="number" min="-10" max="10" />
+        </fieldset>
+        <fieldset>
+          <legend>OTROS DATOS</legend>
+          <label>Termino de Busqueda:</label>
+          <input type="search" />
+
+          <label for="color">Color Favorito:</label>
+          <input id="color" name="color" type="color" />
+        </fieldset>
+        <button type="submit">ENVIAR</button>
+      </form>
+    </section>
+  </body>
+</html>
