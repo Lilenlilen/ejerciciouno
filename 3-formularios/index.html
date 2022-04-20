@@ -9,21 +9,16 @@
     <meta name="description" content="formularios" />
   </head>
   <body>
-    <section>
+    <main>
       <form action="#" method="get">
         <fieldset>
           <legend>DATOS PERSONALES</legend>
 
           <label for="name">Nombre:</label>
-          <input id="name" name="name" type="text" autofocus required />
+          <input id="name" name="name" autofocus required />
 
           <label for="correo">Correo ELectronico</label>
           <input id="correo" name="email" type="email" required />
-
-          <label for="number">Telefono:</label>
-          <input id="prefijo" name="phone" type="tel" readonly value="+34" />
-
-          <input id="number" name="phone" type="tel" />
 
           <label for="web">URL</label>
           <input
@@ -32,6 +27,8 @@
             type="url"
             placeholder="Escribe la URL de tu pagina web personal aqui..."
           />
+          <label for="tel">Telefono:</label>
+          <input id="tel" name="phone" type="tel" readonly value="+34" />
         </fieldset>
 
         <fieldset>
@@ -56,6 +53,7 @@
         </fieldset>
         <fieldset>
           <legend>OTROS DATOS</legend>
+
           <label for="busqueda">Termino de Busqueda:</label>
           <input id="busqueda" name="busqueda" type="search" disabled />
 
@@ -64,6 +62,6 @@
         </fieldset>
         <button type="submit">ENVIAR</button>
       </form>
-    </section>
+    </main>
   </body>
 </html>
